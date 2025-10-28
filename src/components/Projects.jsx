@@ -1,61 +1,33 @@
+import connectcleanIcon from '../assets/connectclean_icon.png';
+
 const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution built with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and admin dashboard.",
-      image: "https://via.placeholder.com/600x400/3b82f6/ffffff?text=E-Commerce",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Tailwind CSS"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example",
+      title: "ConnectClean",
+      description: "A full-stack platform that streamlines cleaning management for short-term rentals by connecting property owners with cleaners. Features automated scheduling, financial transparency, and seamless booking management for the growing short-term rental market.",
+      image: connectcleanIcon,
+      technologies: ["Ruby on Rails", "React", "JavaScript", "HTML", "CSS", "PostgreSQL"],
+      liveUrl: "https://connectclean.net/",
+      githubUrl: "https://github.com/Benjvandam",
       featured: true
     },
     {
       id: 2,
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      image: "https://via.placeholder.com/600x400/f97316/ffffff?text=Task+App",
-      technologies: ["React", "Socket.io", "MongoDB", "Express", "Material-UI"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example",
+      title: "Car-Tel",
+      description: "A peer-to-peer car rental platform built as a team project during Le Wagon bootcamp. Features include car listing, booking system, and user management for the sharing economy.",
+      image: "https://via.placeholder.com/600x400/f97316/ffffff?text=Car-Tel",
+      technologies: ["Ruby on Rails", "JavaScript", "HTML", "CSS", "PostgreSQL"],
+      liveUrl: "https://github.com/Benjvandam/rails-car-rental",
+      githubUrl: "https://github.com/Benjvandam/rails-car-rental",
       featured: true
     },
     {
       id: 3,
-      title: "Weather Dashboard",
-      description: "A responsive weather dashboard that displays current weather conditions and forecasts for multiple cities with interactive maps.",
-      image: "https://via.placeholder.com/600x400/10b981/ffffff?text=Weather",
-      technologies: ["React", "OpenWeather API", "Chart.js", "CSS Grid"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example",
-      featured: false
-    },
-    {
-      id: 4,
-      title: "Blog Platform",
-      description: "A modern blog platform with markdown support, comment system, and admin panel for content management.",
-      image: "https://via.placeholder.com/600x400/8b5cf6/ffffff?text=Blog",
-      technologies: ["Next.js", "Prisma", "PostgreSQL", "NextAuth", "Tailwind CSS"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example",
-      featured: false
-    },
-    {
-      id: 5,
-      title: "Portfolio Website",
-      description: "A responsive portfolio website showcasing projects and skills with smooth animations and modern design.",
-      image: "https://via.placeholder.com/600x400/ef4444/ffffff?text=Portfolio",
-      technologies: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example",
-      featured: false
-    },
-    {
-      id: 6,
-      title: "Chat Application",
-      description: "A real-time chat application with multiple rooms, file sharing, and user presence indicators.",
-      image: "https://via.placeholder.com/600x400/06b6d4/ffffff?text=Chat+App",
-      technologies: ["React", "Socket.io", "Node.js", "MongoDB", "Multer"],
+      title: "Sample Project Template",
+      description: "This is a template project card that you can easily replace with your own projects. Just update the title, description, technologies, and links to showcase your work.",
+      image: "https://via.placeholder.com/600x400/10b981/ffffff?text=Your+Project",
+      technologies: ["React", "Node.js", "MongoDB", "Express"],
       liveUrl: "https://example.com",
       githubUrl: "https://github.com/example",
       featured: false
@@ -71,7 +43,7 @@ const Projects = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-orange-500 mx-auto rounded-full"></div>
           <p className="text-xl text-gray-600 mt-6 max-w-3xl mx-auto">
-            Here are some of my recent projects that showcase my skills and passion for development.
+            Here are some of my projects that showcase my journey from financial management to full-stack development, combining business acumen with technical skills.
           </p>
         </div>
 

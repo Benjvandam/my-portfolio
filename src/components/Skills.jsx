@@ -3,34 +3,33 @@ const Skills = () => {
     {
       title: "Frontend Development",
       skills: [
-        { name: "React", level: 90 },
-        { name: "JavaScript", level: 95 },
-        { name: "TypeScript", level: 85 },
-        { name: "HTML/CSS", level: 95 },
-        { name: "Tailwind CSS", level: 90 },
-        { name: "Next.js", level: 80 },
+        { name: "React", level: 80 },
+        { name: "JavaScript", level: 75 },
+        { name: "TypeScript", level: 20 },
+        { name: "HTML/CSS", level: 80 },
+        { name: "Tailwind CSS", level: 70 },
       ]
     },
     {
       title: "Backend Development",
       skills: [
-        { name: "Node.js", level: 85 },
-        { name: "Express.js", level: 80 },
+        { name: "Node.js", level: 65 },
+        { name: "Express.js", level: 60 },
         { name: "Python", level: 75 },
         { name: "PostgreSQL", level: 80 },
-        { name: "MongoDB", level: 75 },
-        { name: "REST APIs", level: 90 },
+        { name: "MongoDB", level: 50 },
+        { name: "REST APIs", level: 85 },
+        { name: "Ruby on Rails", level: 80 },
       ]
     },
     {
       title: "Tools & Technologies",
       skills: [
         { name: "Git", level: 90 },
-        { name: "Docker", level: 70 },
-        { name: "AWS", level: 65 },
-        { name: "Figma", level: 80 },
-        { name: "VS Code", level: 95 },
-        { name: "Linux", level: 75 },
+        { name: "Docker", level: 50 },
+        { name: "Figma", level: 55 },
+        { name: "VS Code/ Cursor", level: 85 },
+        { name: "Linux", level: 50 },
       ]
     }
   ];
@@ -89,7 +88,7 @@ const Skills = () => {
             {[
               "Responsive Design", "UI/UX Design", "Agile Methodologies", 
               "Test-Driven Development", "Code Review", "Performance Optimization",
-              "SEO", "Accessibility", "Cross-browser Compatibility", "Version Control"
+              "SEO", "Version Control", "Project Management", "Financial Analysis"
             ].map((skill, index) => (
               <span
                 key={index}

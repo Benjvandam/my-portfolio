@@ -104,9 +104,8 @@ const Footer = () => {
           <div className="md:col-span-1">
             <h4 className="text-lg font-semibold mb-4">Get In Touch</h4>
             <div className="space-y-2 text-gray-400">
-              <p>john@example.com</p>
-              <p>+1 (555) 123-4567</p>
-              <p>San Francisco, CA</p>
+              <p>benjamin.van.dam@outlook.com</p>
+              <p>Antwerp, Belgium</p>
             </div>
           </div>
         </div>

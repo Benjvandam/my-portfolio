@@ -23,38 +23,63 @@ const About = () => {
           {/* Content */}
           <div className="order-1 lg:order-2">
             <h3 className="text-3xl font-display font-semibold text-gray-900 mb-6">
-              Passionate Developer & Problem Solver
+              From Spreadsheets to Code & Everything in Between
             </h3>
             
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Hi there! I'm Benjamin, and I've had quite the journey from managing multi-million euro projects 
+                across 9 countries to building web applications. Think of me as someone who accidentally fell in 
+                love with coding while trying to automate my way out of repetitive financial tasks.
               </p>
               
               <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-                culpa qui officia deserunt mollit anim id est laborum.
+                These days, I'm the <strong className="text-orange-600">founder of ConnectClean</strong> and work on 
+                various projects that combine my financial background with modern web development. I love turning 
+                complex business problems into elegant code solutions, whether that's building platforms for 
+                short-term rental management or creating tools that make financial processes more efficient.
               </p>
               
               <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
-                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
-                veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                I'm naturally curious and love taking on challenges that others might 
+                avoid. Whether it's figuring out why a financial model isn't working or debugging why my React 
+                component won't render, I can't help but dive deep until I understand how everything works. 
+                It's both a blessing and a curse! 😅
               </p>
             </div>
 
-            {/* Stats */}
-            <div className="grid grid-cols-2 gap-6 mt-8">
-              <div className="text-center p-4 bg-blue-50 rounded-lg">
-                <div className="text-3xl font-bold text-blue-600 mb-2">3+</div>
-                <div className="text-sm text-gray-600">Years Experience</div>
+            {/* Key Traits */}
+            <div className="mt-6">
+              <h4 className="text-xl font-semibold text-gray-900 mb-4">What I'm Known For</h4>
+              <div className="grid grid-cols-2 gap-3">
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                  <span className="text-gray-700">Stubbornly Persistent (in a good way!)</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                  <span className="text-gray-700">Getting Lost in New Countries</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
+                  <span className="text-gray-700">Turning Problems into Code</span>
+                </div>
               </div>
+            </div>
+
+            {/* Stats */}
+            <div className="grid grid-cols-3 gap-4 mt-8">
               <div className="text-center p-4 bg-blue-50 rounded-lg">
-                <div className="text-3xl font-bold text-blue-600 mb-2">50+</div>
-                <div className="text-sm text-gray-600">Projects Completed</div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">8+</div>
+                <div className="text-sm text-gray-600">Years of Learning</div>
+              </div>
+              <div className="text-center p-4 bg-orange-50 rounded-lg">
+                <div className="text-3xl font-bold text-orange-600 mb-2">9</div>
+                <div className="text-sm text-gray-600">Countries Explored</div>
+              </div>
+              <div className="text-center p-4 bg-green-50 rounded-lg">
+                <div className="text-3xl font-bold text-green-600 mb-2">5</div>
+                <div className="text-sm text-gray-600">Languages (Sort Of)</div>
               </div>
             </div>
           </div>
