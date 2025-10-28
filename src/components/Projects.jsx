@@ -8,7 +8,7 @@ const Projects = () => {
       description: "A full-stack platform that streamlines cleaning management for short-term rentals by connecting property owners with cleaners. Features automated scheduling, financial transparency, and seamless booking management for the growing short-term rental market.",
       image: connectcleanIcon,
       technologies: ["Ruby on Rails", "React", "JavaScript", "HTML", "CSS", "PostgreSQL"],
-      liveUrl: "https://connectclean.net/",
+      liveUrl: "https://app.connectclean.net/",
       githubUrl: "https://github.com/Benjvandam",
       featured: true
     },
