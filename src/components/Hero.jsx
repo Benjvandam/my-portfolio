@@ -72,7 +72,7 @@ const Hero = () => {
               </svg>
             </a>
             <a
-              href="mailto:john@example.com"
+              href="mailto:benjamin.van.dam@outlook.com"
               className="text-gray-400 hover:text-blue-600 transition-colors duration-300"
             >
               <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -34,10 +34,7 @@ const About = () => {
               </p>
               
               <p>
-                These days, I'm the <strong className="text-orange-600">founder of ConnectClean</strong> and work on 
-                various projects that combine my financial background with modern web development. I love turning 
-                complex business problems into elegant code solutions, whether that's building platforms for 
-                short-term rental management or creating tools that make financial processes more efficient.
+                These days, I'm working at Silverfin as a Solution Developer and am the <strong className="text-orange-600">founder of ConnectClean</strong>. I also work on various projects that combine my financial background with modern web development. I love turning complex business problems into elegant code solutions, whether that's building platforms for short-term rental management or creating tools that make financial processes more efficient.
               </p>
               
               <p>
@@ -54,7 +51,7 @@ const About = () => {
               <div className="grid grid-cols-2 gap-3">
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                  <span className="text-gray-700">Stubbornly Persistent (in a good way!)</span>
+                  <span className="text-gray-700">Stubbornly Persistent</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-blue-500 rounded-full"></div>

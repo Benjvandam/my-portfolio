@@ -18,7 +18,6 @@ const Projects = () => {
       description: "A peer-to-peer car rental platform built as a team project during Le Wagon bootcamp. Features include car listing, booking system, and user management for the sharing economy.",
       image: "https://via.placeholder.com/600x400/f97316/ffffff?text=Car-Tel",
       technologies: ["Ruby on Rails", "JavaScript", "HTML", "CSS", "PostgreSQL"],
-      liveUrl: "https://github.com/Benjvandam/rails-car-rental",
       githubUrl: "https://github.com/Benjvandam/rails-car-rental",
       featured: true
     },
@@ -88,7 +87,7 @@ const Projects = () => {
                   </div>
                   
                   <div className="flex gap-4">
-                    <a
+                    {project.liveUrl && <a
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -96,7 +95,8 @@ const Projects = () => {
                     >
                       Live Demo
                     </a>
-                    <a
+                    }
+                    {project.githubUrl && <a
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -104,6 +104,7 @@ const Projects = () => {
                     >
                       GitHub
                     </a>
+                    }
                   </div>
                 </div>
               </div>
@@ -157,7 +158,7 @@ const Projects = () => {
                   </div>
                   
                   <div className="flex gap-2">
-                    <a
+                    {project.liveUrl && <a
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -165,7 +166,8 @@ const Projects = () => {
                     >
                       Demo
                     </a>
-                    <a
+                    }
+                    {project.githubUrl && <a
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -173,6 +175,7 @@ const Projects = () => {
                     >
                       Code
                     </a>
+                    }
                   </div>
                 </div>
               </div>

@@ -8,16 +8,16 @@ const Skills = () => {
         { name: "TypeScript", level: 20 },
         { name: "HTML/CSS", level: 80 },
         { name: "Tailwind CSS", level: 70 },
+        { name: "Liquid", level: 90 },
       ]
     },
     {
       title: "Backend Development",
       skills: [
-        { name: "Node.js", level: 65 },
-        { name: "Express.js", level: 60 },
+        { name: "Node.js", level: 40 },
         { name: "Python", level: 75 },
         { name: "PostgreSQL", level: 80 },
-        { name: "MongoDB", level: 50 },
+        { name: "MongoDB", level: 40 },
         { name: "REST APIs", level: 85 },
         { name: "Ruby on Rails", level: 80 },
       ]
