@@ -11,10 +11,10 @@ const Contact = () => {
   const [submitStatus, setSubmitStatus] = useState({ type: null, message: '' });
 
   // EmailJS configuration
-  // You'll need to replace these with your actual EmailJS credentials
-  const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID || 'your_service_id';
-  const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'your_template_id';
-  const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'your_public_key';
+  // Get values from environment variables
+  const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
   const handleChange = (e) => {
     setFormData({
@@ -31,6 +31,32 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus({ type: null, message: '' });
+
+    // Validate environment variables are set
+    if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
+      console.error('EmailJS Configuration Error:', {
+        hasServiceId: !!SERVICE_ID,
+        hasTemplateId: !!TEMPLATE_ID,
+        hasPublicKey: !!PUBLIC_KEY
+      });
+      setSubmitStatus({
+        type: 'error',
+        message: 'Email service is not properly configured. Please contact me directly at benjamin.van.dam@outlook.com'
+      });
+      setIsSubmitting(false);
+      return;
+    }
+
+    // Validate that environment variables don't have placeholder values
+    if (SERVICE_ID === 'your_service_id' || TEMPLATE_ID === 'your_template_id' || PUBLIC_KEY === 'your_public_key') {
+      console.error('EmailJS Configuration Error: Environment variables contain placeholder values');
+      setSubmitStatus({
+        type: 'error',
+        message: 'Email service is not properly configured. Please contact me directly at benjamin.van.dam@outlook.com'
+      });
+      setIsSubmitting(false);
+      return;
+    }
 
     try {
       // Send email using EmailJS
@@ -58,9 +84,21 @@ const Contact = () => {
     } catch (error) {
       // Error handling
       console.error('EmailJS Error:', error);
+      
+      // Provide more specific error messages
+      let errorMessage = 'Sorry, there was an error sending your message. Please try again or contact me directly at benjamin.van.dam@outlook.com';
+      
+      if (error.text) {
+        if (error.text.includes('Public Key is invalid')) {
+          errorMessage = 'Email service configuration error. Please contact me directly at benjamin.van.dam@outlook.com';
+        } else if (error.text) {
+          console.error('EmailJS Error Details:', error.text);
+        }
+      }
+      
       setSubmitStatus({
         type: 'error',
-        message: 'Sorry, there was an error sending your message. Please try again or contact me directly at benjamin.van.dam@outlook.com'
+        message: errorMessage
       });
     } finally {
       setIsSubmitting(false);
